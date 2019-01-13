@@ -1,0 +1,17 @@
+{
+  "name": "fluffy-math-docs",
+  "version": "1.0.0",
+  "description": "Docs for fluffy math",
+  "main": "index.js",
+  "repository": "git@github.com:spencerwooo/fluffy-math-docs.git",
+  "author": "spencerwooo <spencerwoo98@foxmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "docs:dev": "vuepress dev docs",
+    "docs:build": "vuepress build docs"
+  },
+  "private": true,
+  "devDependencies": {
+    "vuepress": "^0.14.8"
+  }
+}
