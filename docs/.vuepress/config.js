@@ -1,5 +1,5 @@
 module.exports = {
-  title: 'Fluffy Math',
+  title: 'Fluffy Math Docs',
   description: '四则运算计算题的生成与解决类库',
   base: '/fluffy-math-docs/',
   head: [
@@ -9,7 +9,7 @@ module.exports = {
     }],
     ['meta', {
       name: 'theme-color',
-      content: '#00ABE9'
+      content: '#2076ff'
     }],
     ['meta', {
       name: 'apple-mobile-web-app-capable',
@@ -29,7 +29,7 @@ module.exports = {
     }],
     ['meta', {
       name: 'msapplication-TileColor',
-      content: '#06BDFF'
+      content: '#2076ff'
     }]
   ],
   themeConfig: {
@@ -37,10 +37,10 @@ module.exports = {
       {
         text: '小组成员',
         items: [{
-          text: 'Spencer',
+          text: '📕 Spencer',
           link: '/Spencer/'
         },{
-          text: 'Garvey',
+          text: '📘 Garvey',
           link: '/Garvey/'
         }]
       },{
