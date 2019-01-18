@@ -66,7 +66,9 @@ Fluffy Math Front-end 即 Fluffy Math 的前端页面，**主要完成了项目�
 
 > 真的，我们两个人从来都没学过 Javascript。
 
-这部分内容尚待完善。目前仅有基础框架，没有上线。
+~~这部分内容尚待完善。目前仅有基础框架，没有上线。~~
+
+这部分已经部署，地址位于：<https://spencerwoo.com/fluffy-math-spa/>
 
 **构建与编译方式：**
 
