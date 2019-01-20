@@ -145,9 +145,32 @@ sidebarDepth: 3
 
 控制命令行中，当命令行选择了generator，我们自动进入下一个判断，用户继续选择是生成整数表达式还是分数表达式，然后选择运算题目的数量，完成输入。其中，对生成题目的数量我们控制输入必须为正整数。
 
-## VI. 性能改进
+## VI. 测试与性能分析
 
-[![Codacy Badge](https://img.shields.io/codacy/coverage/ebf8f648a65a4e3a86f93b50d7fd6dce.svg)](https://www.codacy.com/app/spencerwooo/fluffy-math?utm_source=github.com&utm_medium=referral&utm_content=spencerwooo/fluffy-math&utm_campaign=Badge_Coverage)
+### 6.1 性能
+
+本次项目我们团队利用 `Node.js` 内建的 Profiler 进行性能分析，得到了性能分析报告位于 > [./performance/processed.txt](https://github.com/spencerwooo/fluffy-math/blob/master/performance/processed.txt)。性能分析报表显示：我们程序主要性能消耗在四则运算表达式的生成上，及运算结果时对字符串的处理上面。
+
+很遗憾，由于时间问题，我们对性能的改进在项目截止日期前并没有进行完成，但是我们优化的主要思路是：
+
+1. 减少生成过程的回溯
+2. 考虑使用二叉树等高效方法管理和存储表达式
+
+### 6.2 测试
+
+[![Codacy Badge](https://img.shields.io/codacy/coverage/ebf8f648a65a4e3a86f93b50d7fd6dce.svg?style=for-the-badge)](https://www.codacy.com/app/spencerwooo/fluffy-math?utm_source=github.com&utm_medium=referral&utm_content=spencerwooo/fluffy-math&utm_campaign=Badge_Coverage)
+
+本次我们设计了完备的测试用例，对项目进行单元测试。测试用例保存在 [/test](https://github.com/spencerwooo/fluffy-math/tree/master/test) 处。同时我们利用 Codacy 平台对我们的代码覆盖率进行持续检测。单元测试的覆盖率能达到 95% 以上，十分完美。
+
+### 6.3 代码质量
+
+[![JavaScript Style Guide](https://cdn.rawgit.com/standard/standard/master/badge.svg)](https://github.com/standard/standard)
+
+本次我们利用 `ESLint` 对代码质量进行实时的检测，严格遵循 [Standard JS](https://standardjs.com/) 的编码标准。
+
+[![Codacy Badge](https://img.shields.io/codacy/grade/ebf8f648a65a4e3a86f93b50d7fd6dce.svg?logo=codacy&logoColor=%23fff&style=for-the-badge)](https://www.codacy.com/app/spencerwooo/fluffy-math?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=spencerwooo/fluffy-math&amp;utm_campaign=Badge_Grade)
+
+同时我们也将我们的代码利用 Codacy 平台进行持续的代码质量分析，截至项目预期结束日我们的代码质量等级为 A。
 
 ## VII. 代码细节
 
